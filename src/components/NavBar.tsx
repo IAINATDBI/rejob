@@ -49,5 +49,9 @@ export default function NavBar() {
 }
 
 function SignInButton() {
-  return <Button className="bg-[#ff3e4c]" onClick={() => signIn()}>Sign in</Button>;
+  const handleSignIn = () => {
+    signIn(undefined, { callbackUrl: '/rejob' });
+  };
+
+  return <Button className="bg-[#ff3e4c]" onClick={handleSignIn}>Sign in</Button>;
 }
