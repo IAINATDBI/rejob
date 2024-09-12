@@ -4,6 +4,7 @@ import { Adapter } from "next-auth/adapters";
 import GitHub from "next-auth/providers/github";
 import Google from "next-auth/providers/google";
 import Resend from "next-auth/providers/resend";
+import Facebook from "next-auth/providers/facebook";
 import prisma from "./lib/prisma";
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
@@ -21,8 +22,9 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
   providers: [
     Google,
     GitHub,
+    Facebook,
     Resend({
-      from: "no-reply@tutorial.codinginflow.com",
+      from: "no-reply@neuronteam.net",
     }),
   ],
 });

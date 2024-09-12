@@ -8,6 +8,9 @@ const nextConfig = {
       {
         hostname: "lh3.googleusercontent.com",
       },
+      {
+        hostname: "scontent-atl3-1.xx.fbcdn.net",
+      },
     ],
   },
 };
