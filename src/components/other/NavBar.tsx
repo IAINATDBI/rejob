@@ -2,8 +2,8 @@
 
 import { signIn, useSession } from "next-auth/react";
 import Link from "next/link";
-import UserButton from "./UserButton";
-import { Button } from "./ui/button";
+import UserButton from "../UserButton";
+import { Button } from "../ui/button";
 import Image from "next/image";
 export default function NavBar() {
   const session = useSession();
@@ -11,7 +11,7 @@ export default function NavBar() {
 
   return (
     <header className="sticky top-0 bg-background px-3 shadow-sm">
-    <nav className="flex flex-wrap justify-between items-center px-4 py-2 bg-white">
+    <nav className="flex flex-wrap justify-between items-center px-4 py-2 bg-white max-w-[1440px] mx-auto">
       <div className="flex items-center bg-[#ff3e4c] rounded p-1 text-white">
         <Link href="/">
           <Image
