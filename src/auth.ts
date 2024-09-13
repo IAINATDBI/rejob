@@ -22,7 +22,6 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
   providers: [
     Google,
     GitHub,
-    Facebook,
     Resend({
       from: "no-reply@neuronteam.net",
     }),
