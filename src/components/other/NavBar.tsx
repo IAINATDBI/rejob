@@ -22,7 +22,7 @@ export default function NavBar() {
             className="mr-2"
           />
         </Link>
-        <span className="font-bold text-2xl">ReJob</span>
+        <span className="font-bold text-2xl">Fantastic Calculator</span>
       </div>
       <div className="hidden md:flex space-x-4">
         {["Home", "Learn", "FAQ", "Contact"].map((item) => (
