@@ -10,11 +10,11 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | Next-Auth V5 Tutorial",
-    absolute: "Next-Auth V5 tutorial",
+    template: "%s | Generic Auth",
+    absolute: "Generic Auth",
   },
   description:
-    "Learn how to use Auth.js v5 in Next.js with custom roles, caching, and more!",
+    "Generic Auth",
 };
 
 export default function RootLayout({
@@ -29,7 +29,7 @@ export default function RootLayout({
           <div className="max-w-[1440px] mx-auto">
             <NavBar />
             {children}
-            <Footer />
+            {/* <Footer /> */}
           </div>
           <Toaster />
         </SessionProvider>

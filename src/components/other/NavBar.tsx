@@ -14,13 +14,13 @@ export default function NavBar() {
     <nav className="flex flex-wrap justify-between items-center px-4 py-2 bg-white max-w-[1440px] mx-auto">
       <div className="flex items-center bg-[#ff3e4c] rounded p-1 text-white">
         <Link href="/">
-          <Image
+          {/* <Image
             src="/logo.svg"
             alt="ReJob Logo"
             width={48}
             height={41}
             className="mr-2"
-          />
+          /> */}
         </Link>
         <span className="font-bold text-2xl">Fantastic Calculator</span>
       </div>
@@ -34,9 +34,9 @@ export default function NavBar() {
             {item}
           </span>
         ))}
-        <Link href="/pricing" className="font-bold text-[#ff3e4c] hover:underline">
+        {/* <Link href="/pricing" className="font-bold text-[#ff3e4c] hover:underline">
           Pricing
-        </Link>
+        </Link> */}
       </div>
         {/* <Link href="/" className="font-bold">
           Next-Auth v5 Tutorial
@@ -50,7 +50,7 @@ export default function NavBar() {
 
 function SignInButton() {
   const handleSignIn = () => {
-    signIn(undefined, { callbackUrl: '/rejob' });
+    signIn(undefined, { callbackUrl: '/protected' });
   };
 
   return <Button className="bg-[#ff3e4c]" onClick={handleSignIn}>Sign in</Button>;
