@@ -18,7 +18,7 @@ export default async function RejobPage() {
   }
   return (
     <div>
-      <h1 className={font.className} style={{ marginBottom: '30px' }}>Protected Page: try to navigate to "/protected" route when signed out.</h1>
+      <h1 className={font.className} style={{ marginBottom: '30px' }}>Protected Page: try to navigate to /protected route when signed out.</h1>
       {/* ... existing content ... */}
     </div>
   )
